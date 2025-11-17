@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import Dashboard from "./Pages/Dashboard";
-import PrivateRoute from "./Components/PrivateRoutes";
+import PrivateRoute from "./components/PrivateRoutes";
 
 function App() {
   return (

@@ -8,8 +8,8 @@ Users can signup, login, book rooms, and view their bookings. Admins can seed ro
 ## 📦 Project Setup
 
 ### 1️⃣ Clone the repository
-git clone <repo_url>
-cd <repo_folder>
+git clone https://github.com/sagarpandey142/Workspace
+cd Workspace
 
 2️⃣ Install dependencies
 Backend:
@@ -89,5 +89,5 @@ GET /api/bookings/analytics?from=2025-11-01&to=2025-11-30
 Authorization: Bearer <token>
 
 🌐 Deployment
-Backend: <deployment_link_backend>
-Frontend: <deployment_link_frontend>
+Backend: https://workspace-wl4t.onrender.com
+Frontend: https://workspace-ten-dun.vercel.app/

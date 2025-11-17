@@ -54,12 +54,19 @@ Frontend: Code-splitting with React lazy load
 
 Backend: Horizontal scaling via Docker/Kubernetes
 
-5️⃣ AI Usage Notes
-Smart Suggestions: Recommend available rooms based on user history
+5️⃣  AI Usage Notes (For Compliance)
 
-Dynamic Pricing: Adjust room price based on occupancy trends
+To streamline development and reduce time spent on repetitive tasks, limited AI assistance was used in the following areas:
 
-Fraud Detection: Detect overlapping bookings or unusual admin activity
+✅ Smart Suggestions
+
+Assisted in creating helper logic to recommend available rooms based on past user activity and booking patterns.
+
+✅ Dynamic Pricing Logic
+
+Helped outline the formula for dynamic room pricing, considering occupancy rates and peak usage hours.
+
+Final implementation and integration were written manually.
 
 
 

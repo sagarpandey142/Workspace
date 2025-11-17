@@ -1,72 +1,85 @@
-# 🚀 Workspace Booking Platform
+🚀 Workspace Booking Platform
 
-A **full-stack workspace booking platform** built with **React**, **Node.js/Express**, **MongoDB**, and **JWT authentication**.  
-Users can signup, login, book rooms, and view their bookings. Admins can seed rooms, view analytics, and manage bookings.
+A full-stack Workspace Booking System built with:
 
----
+React + Vite (Frontend)
 
-## 📦 Project Setup
+Node.js / Express (Backend)
 
-### 1️⃣ Clone the repository
+MongoDB (Database)
+
+JWT Authentication
+
+Users can sign up, log in, book rooms, cancel bookings, and view their reservation history.
+Admins can seed rooms, view analytics, and manage booking operations.
+
+📦 Project Setup
+1️⃣ Clone the Repository
 git clone https://github.com/sagarpandey142/Workspace
 cd Workspace
 
-2️⃣ Install dependencies
-Backend:
+2️⃣ Install Dependencies
+🔹 Backend
 cd backend
 npm install
 
-Frontend:
+🔹 Frontend
 cd frontend
 npm install
 
-3️⃣ Set environment variables
-Backend (backend/.env):
+3️⃣ Configure Environment Variables
+🛠 Backend (backend/.env)
 PORT=4000
 MONGO_URI=<your_mongodb_uri>
 JWT_SECRET=<your_jwt_secret>
-Frontend (frontend/.env):
+
+🖥 Frontend (frontend/.env)
 VITE_API_BASE=http://localhost:4000
 
-4️⃣ Run the application
-Backend:
+4️⃣ Run the Application
+▶ Backend
 cd backend
 npm run dev
 
-Frontend:
+▶ Frontend
 cd frontend
 npm run dev
-Visit http://localhost:5173 (Vite default) to use the frontend.
 
-⚡ API Samples
+
+🌐 Open the App:
+http://localhost:5173
+ (Vite default port)
+
+⚡ API Endpoints (Samples)
 1️⃣ Signup
-http
-Copy code
+
 POST /api/auth/signup
-Content-Type: application/json
 
 {
   "name": "John Doe",
   "email": "john@example.com",
   "password": "securepassword",
-  "role": "user"  // or "admin"
+  "role": "user"
 }
+
 2️⃣ Login
-http
-Copy code
+
 POST /api/auth/login
-Content-Type: application/json
 
 {
   "email": "john@example.com",
   "password": "securepassword"
 }
-3️⃣ Get Rooms
-GET /api/rooms/
-Authorization: Bearer <token>
 
-4️⃣ Post Booking
+3️⃣ Get All Rooms
+
+GET /api/rooms/
+Headers: Authorization: Bearer <token>
+
+4️⃣ Create Booking
+
 POST /api/bookings
+
 Authorization: Bearer <token>
 Content-Type: application/json
 
@@ -75,19 +88,24 @@ Content-Type: application/json
   "startTime": "2025-11-17T10:00:00Z",
   "endTime": "2025-11-17T12:00:00Z"
 }
+
 5️⃣ List My Bookings
+
 GET /api/bookings/ListBookingBasedOnId
 Authorization: Bearer <token>
 
 6️⃣ Cancel Booking
+
 POST /api/bookings/<booking_id>/cancel
 Authorization: Bearer <token>
 
-7️⃣ Analytics (Admin only)
+7️⃣ Analytics (Admin Only)
 
 GET /api/bookings/analytics?from=2025-11-01&to=2025-11-30
 Authorization: Bearer <token>
 
-🌐 Deployment
-Backend: https://workspace-wl4t.onrender.com
-Frontend: https://workspace-ten-dun.vercel.app/
+🌐 Deployment Links
+
+Backend (Render): https://workspace-wl4t.onrender.com
+
+Frontend (Vercel): https://workspace-ten-dun.vercel.app/
